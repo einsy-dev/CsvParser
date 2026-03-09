@@ -1,4 +1,4 @@
-module github.com/einsy-dev/WailsSvelte
+module github.com/einsy-dev/CsvParser
 
 go 1.25.0
 

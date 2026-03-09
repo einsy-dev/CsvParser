@@ -4,7 +4,7 @@ import (
 	"context"
 	"embed"
 
-	"github.com/einsy-dev/WailsSvelte/internal/app"
+	"github.com/einsy-dev/CsvParser/internal/app"
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
@@ -15,14 +15,14 @@ var assets embed.FS
 
 func main() {
 	err := wails.Run(&options.App{
-		Title:             "WailsSvelte",
+		Title:             "CsvParser",
 		Width:             600,
 		Height:            400,
 		DisableResize:     false,
 		Frameless:         false,
 		StartHidden:       false,
 		HideWindowOnClose: false,
-		AlwaysOnTop:       true,
+		AlwaysOnTop:       false,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},

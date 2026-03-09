@@ -15,7 +15,6 @@ const config = {
 			"$lib": "./src/lib",
 			"$widgets": "./src/widgets",
 			"$shared": "./src/shared",
-
 		}
 	}
 };
